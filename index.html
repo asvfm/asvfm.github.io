@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bulletin d'inscription 2024-2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-xxl p-0 m-0">
+  <header class="row">
+    <div class="col-2">
+      <img src="img/logo.jpg" alt="ASVF Montagne">
+    </div>
+    <div class="col-10 text-center">
+      <h1 class="fs-4">ASSOCIATION SPORTIVE DE VILLEFONTAINE-SECTION MONTAGNE</h1>
+      <small class="fst-italic">
+        22 rue du Passou 38090 VAULX-MILIEU <br>
+        e-mail : <a href="mailto:contact@asvf-montagne.fr">contact@asvf-montagne.fr</a><br>
+        Club affilié à la Fédération Française des Clubs Alpins et de Montagne et à la FFH <br>
+        Agrément sport DDJS n°10/75-38S142- SIRET (ASVF) 325 919 595 00034
+      </small>
+    </div>
+    <div class="col-12 text-center fw-bolder">
+      <h1>Inscription 2024 - 2025</h1>
+    </div>
+  </header>
+  <hr>
+  <section id="person">
+    <h2 class="bg-secondary-subtle">Références de la personne inscrite</h2>
+
+    <div class="row mb-2">
+      <label for="civility" class="col-form-label col-2">Civilité</label>
+      <div class="col-3">
+        <select id="civility" class="form-select">
+          <option value="monsieur">Monsieur</option>
+          <option value="mademoiselle">Mademoiselle</option>
+          <option value="madame">Madame</option>
+        </select>
+      </div>
+      <label for="name" class="col-form-label col-2">Nom</label>
+      <div class="col-5"><input type="text" id="name" class="form-control" placeholder="Nom"></div>
+    </div>
+    <div class="row mb-2">
+      <label for="firstname" class="col-form-label col-2">Prénom</label>
+      <div class="col-10"><input type="text" id="firstname" class="form-control"></div>
+    </div>
+    <div class="row mb-2">
+      <label for="address" class="col-form-label col-2">Adresse</label>
+      <div class="col-10"><input type="text" class="form-control" id="address"></div>
+    </div>
+    <div class="row mb-2">
+      <label for="zip-code" class="col-form-label col-2">Code Postal</label>
+      <div class="col-3"><input type="text" class="form-control" id="zip-code"></div>
+      <label for="city" class="col-form-label col-1">Ville</label>
+      <div class="col-6"><input type="text" class="form-control" id="city"></div>
+    </div>
+    <div class="row mb-2">
+      <label for="birthdate" class="col-form-label col-3">Date de naissance</label>
+      <div class="col-3"><input type="date" class="form-control" id="birthdate"></div>
+      <label for="birthplace" class="col-form-label col-3">Ville de naissance</label>
+      <div class="col-3"><input type="text" class="form-control" id="birthplace"></div>
+    </div>
+    <div class="row mb-2">
+      <label for="phone" class="col-form-label col-3">Téléphone fixe</label>
+      <div class="col-3"><input type="tel" class="form-control" id="phone"></div>
+      <label for="mobile" class="col-form-label col-3">Téléphone portable</label>
+      <div class="col-3"><input type="tel" class="form-control" id="mobile"></div>
+    </div>
+    <div class="row mb-2">
+      <label for="email" class="col-form-label col-2">Email</label>
+      <div class="col-10"><input type="email" class="form-control" id="email"></div>
+    </div>
+    <div class="mb-2">
+      <label for="mineur" class="form-label">Si l'enfant est mineur</label>
+      <textarea id="mineur" class="form-control" rows="3">Nom, prénom, adresse, lien de parenté du responsable légal</textarea>
+    </div>
+  </section>
+
+  <section id="practice">
+    <h2 class="bg-secondary-subtle">Pratique des activités souhaitées <small class="fs-4">(Purement statistiques)</small></h2>
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" id="rando">
+      <label for="rando" class="form-check-label">Randonnée pédestre</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" id="raquette">
+      <label for="raquette" class="form-check-label">Raquettes à neige</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" id="ski">
+      <label for="ski" class="form-check-label">Ski de montagne</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" id="alpinisme">
+      <label for="alpinisme" class="form-check-label">Alpinisme</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" id="escalade">
+      <label for="escalade" class="form-check-label">Escalade</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" id="ecole-escalade">
+      <label for="ecole-escalade" class="form-check-label">École d'ecalade</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="checkbox" class="form-check-input" id="handi">
+      <label for="handi" class="form-check-label">Handisport</label>
+    </div>
+  </section>
+
+  <section id="asvf">
+    <h2 class="bg-secondary-subtle">Carte ASVF Omnisport</h2>
+
+    <div class="row mb-2">
+      <label for="asvf-card" class="col-form-label col-6">Je possède une carte ASVF</label>
+      <div class="col-4">
+        <div class="input-group">
+          <div class="input-group-text">
+            <label for="asvf-oui" class="visually-hidden">Oui</label>
+            <input type="radio" name="asvf-card" id="asvf-oui" class="form-check-input">
+          </div>
+          <input type="text" class="form-control" id="asvf-card">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="form-check">
+          <input type="radio" name="asvf-card" id="asvf-non" class="form-check-input">
+          <label for="asvf-non" class="form-check-label">Non</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ffcam">
+    <h2 class="bg-secondary-subtle">Licence FFCAM</h2>
+    <div class="row mb-2">
+      <label for="personal-licence" class="col-form-label col-6">Je suis déjà licencié·e FFCAM pour cette saison</label>
+      <div class="col-4">
+        <div class="input-group">
+          <div class="input-group-text">
+            <label for="personal-licence-oui" class="visually-hidden">Oui</label>
+            <input type="radio" name="personal-licence" id="personal-licence-oui" class="form-check-input">
+          </div>
+          <input type="text" class="form-control" id="personal-licence">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="form-check">
+          <input type="radio" name="personal-licence" id="personal-licence-non" class="form-check-input">
+          <label for="personal-licence-non" class="form-check-label">Non</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <label for="conjoint-licence" class="col-form-label col-6">Mon conjoint ou parent est déjà licencié·e FFCAM</label>
+      <div class="col-4">
+        <div class="input-group">
+          <div class="input-group-text">
+            <label for="conjoint-licence-oui" class="visually-hidden">Oui</label>
+            <input type="radio" name="conjoint-licence" id="conjoint-licence-oui" class="form-check-input">
+          </div>
+          <input type="text" class="form-control" id="conjoint-licence">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="form-check">
+          <input type="radio" name="conjoint-licence" id="conjoint-licence-non" class="form-check-input">
+          <label for="conjoint-licence-non" class="form-check-label">Non</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cotisation">
+    <h2 class="bg-secondary-subtle">Détail des cotisations</h2>
+    <div class="row mb-2">
+      <label for="cotisation-group" class="col-form-label col-3">Groupe</label>
+      <div class="col-7">
+        <select id="cotisation-group" class="form-select" name="cotisation-group">
+          <option value="" disabled selected>Sélectionner un groupe</option>
+          <option value="T1">Adulte (T1)</option>
+          <option value="J1">18 à 24 ans (J1)</option>
+          <option value="J2">Jeune (-18 ans) (J2)</option>
+          <option value="C1">Conjoint (C1)</option>
+          <option value="E2">Enfant d'un member (E2)</option>
+          <option value="ecole">École d'escalade</option>
+          <option value="licence">Licence en cours de validité</option>
+          <option value="ffh">Licence FFH</option>
+          <option value="etudiant">Étudiant avec SAE</option>
+        </select>
+      </div>
+      <div class="col-2 mt-2">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="cotisation-sae">
+          <label for="cotisation-sae" class="form-check-label">Avec SAE</label>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <label for="cotisation-sum" class="col-form-label col-3">Prix de l'inscription</label>
+      <div class="col-9">
+        <div class="input-group">
+          <input type="text" id="cotisation-sum" class="form-control fw-bold" readonly>
+          <span class="input-group-text">&euro;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificat-medical">
+    <h2 class="bg-secondary-subtle">Certificat médical</h2>
+    <div class="alert alert-info">
+      Un certificat médical est demandé pour toute nouvelle inscription. Une attestation de santé sera demandée
+      pour proroger d'année en année la validité du certificat médical dans la limite de 5 saisons consécutives.
+    </div>
+    <ul class="nav nav-tabs" id="certificat-status">
+      <li class="nav-item">
+        <button class="nav-link active" id="certificat-first" data-bs-toggle="tab" data-bs-target="#certificat-first-pane" type="button">Première licence</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="certificat-next" data-bs-toggle="tab" data-bs-target="#certificat-next-pane" type="button">Renouvellement de la licence</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="certificat-status-content">
+      <div class="tab-pane show active" id="certificat-first-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="row mb-2">
+          <label class="col-form-label col-3">Certificat médical</label>
+          <div class="col-9 mt-2">
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="certificat-type" id="certificat-type-competition">
+              <label for="certificat-type-competition" class="form-check-label">Compétition</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="certificat-type" id="certificat-type-loisir">
+              <label for="certificat-type-loisir" class="form-check-label">Loisir</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-12">
+            Je certifie avoir fourni un certificat médical de non-contrindication aux sports statutaires de la fédération établi
+            par le <label for="docteur">docteur</label> <input type="text" id="docteur" class="form-control d-inline w-50">
+            <label for="certificat-date">le</label> <input type="date" class="form-control d-inline w-25" id="certificat-date"> et avoir pris
+            connaissance des précautions et restrictions éventuelles des pratiques.
+            </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="certificat-next-pane">
+        <div class="row mb-2">
+          <div class="col-12">
+            Vous avez transmis un certificat médical l'an dernier. Le questionnaire de santé que le club va vous remettre est à
+            compléter chez vous. Si toutes vos réponses sont négatives, l'attestation ci-dessous est à compléter, si l’une
+            des réponses est positive, vous devez fournir un nouveau certificat médical et compléter ci-dessus.
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-12">
+            <label class="form-label d-block fw-bold">Attestation de santé</label>
+            <label for="certificat-self-name">Je soussigné·e</label><input type="text" id="certificat-self-name" class="form-control d-inline w-50">
+            atteste avoir renseigné le questionnaire de santé QS-SPORT Cerfa N°15699*01 et avoir répondu par la négative à l'ensemble des rubriques.
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-12">
+            <label class="form-label d-block fw-bold">Pour les mineurs</label>
+            <label for="certificat-mineur-name">Je soussigné·e</label><input type="text" id="certificat-mineur-name" class="form-control d-inline w-50">
+            en ma qualité de <label for="certificat-mineur-self">représentant légal</label> de
+            <input type="text" id="certificat-mineur-self" class="form-control d-inline w-50"> qu'iel a renseigné le questionnaire de santé QS-
+            SPORT Cerfa N°15699*01 et avoir répondu par la négative à l'ensemble des rubriques.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rgpd">
+    <h2 class="bg-secondary-subtle">Données personnelles</h2>
+    <div class="row mb-2">
+      <div class="col-12">
+        Nous avons besoin de recueillir les informations du présent formulaire pour la gestion administrative de votre licence sportive.
+        Elles sont destinées aux gestionnaires de la FFCAM, aux personnes habilitées de votre club, aux prestataires (informatique,
+        routage, assurance) et leurs éventuels sous-traitants, et éventuellement aux partenaires de la FFCAM sauf opposition de votre part.
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-12">
+        <div class="form-check">
+          <input type="checkbox" id="rgpd-ffcam" class="form-check-input">
+          <label for="rgpd-ffcam" class="form-check-label">J'accepte que les informations recueillies soient enregistrées dans le fichier informatisé de la FFCAM</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="rgpd-partners" class="form-check-input">
+          <label for="rgpd-partners" class="form-check-label">Je souhaite recevoir des informations des partenaires FFCAM</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="rgpd-asvf" class="form-check-input">
+          <label for="rgpd-partners" class="form-check-label">
+            J'accepte de recevoir par mail toute l'actualité sur des activités du club en général <br>
+            <span class="fst-italic">
+              Pour l'école d'escalade, l'inscription est obligatoire afin de vous tenir informé des événements liés au groupe de votre enfant
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-12">
+        Conformément à la loi informatique et libertés vous pouvez exercer votre droit d'accès aux données en nous contactant.
+      </div>
+    </div>
+  </section>
+
+  <section id="signature">
+    <div class="row mb-2">
+      <div class="col-6">
+        <label for="signature-city" class="form-label">Fait à</label><input type="text" class="form-control d-inline w-50" id="signature-city"><br>
+        <label for="signature-date" class="form-label">Le</label><input type="date" class="form-control d-inline w-50" id="signature-date">.
+      </div>
+      <div class="col-6">
+        Signature <small>(Pour les mineurs, représentant légal)</small><br>
+        Lu et approuvé
+      </div>
+    </div>
+  </section>
+
+  <section id="validation">
+    <div class="row bg-secondary-subtle border-top border-secondary py-4">
+      <div class="col-12 text-center">
+        <button type="button" class="btn btn-primary btn-lg px-5 py-4" onclick="window.print()">Imprimer</button>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  const documentLoaded = () => {
+    const cotisations = {
+      T1: 120,
+      J1: 103,
+      J2: 97,
+      C1: 104,
+      E2: 86,
+      ecole: 230,
+      licence: 41,
+      ffh: 75,
+      etudiant: 120,
+    };
+    const saeAvailable = {
+      T1: true,
+      J1: true,
+      J2: true,
+      C1: true,
+      E2: true,
+      ecole: false,
+      licence: true,
+      ffh: false,
+      etudiant: false,
+    };
+    const cotisationGroup = document.querySelector('#cotisation-group');
+    const cotisationSae = document.querySelector('#cotisation-sae');
+    const cotisationSum = document.querySelector('#cotisation-sum');
+    const updateSum = () => {
+      const value = cotisationGroup.value;
+      if (saeAvailable[value]) {
+        cotisationSae.removeAttribute('disabled');
+      } else {
+        cotisationSae.setAttribute('disabled', 'disabled');
+        cotisationSae.checked = false;
+      }
+      cotisationSum.value = cotisations[value]
+        + (cotisationSae.checked ? 35 : 0);
+    };
+    cotisationGroup
+      .addEventListener('change', updateSum);
+    cotisationSae
+      .addEventListener('change', updateSum);
+  };
+  window.addEventListener('load', documentLoaded);
+</script>
+</body>
+</html>
