@@ -331,6 +331,11 @@
       <div class="col-6">
         Signature <small>(Pour les mineurs, représentant légal)</small><br>
         Lu et approuvé
+        <canvas class="border-1 border-black border w-100" style="height: 140px" id="signature-canvas"></canvas>
+        <button type="button" class="btn btn-secondary" id="signature-efface">Effacer la signature</button>
+        <div>
+          <img src="data:image/png" alt="" id="signature-image">
+        </div>
       </div>
     </div>
   </section>
@@ -346,9 +351,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="./js/signature.js"></script>
+<script src="./js/cotisation.js"></script>
 <script>
   window.addEventListener('load', () => {
     cotisation();
+    signature();
   });
 </script>
 </body>

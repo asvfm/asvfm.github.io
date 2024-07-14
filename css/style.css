@@ -10,6 +10,9 @@ body {
   margin: auto;
   padding-bottom: 50mm;
 }
+#signature-image {
+  display: none;
+}
 
 @media print {
   html, body {
@@ -40,4 +43,6 @@ body {
   }
 
   #validation { display: none; }
+  #signature-canvas, #signature-efface { display: none; }
+  #signature-image { display: block; }
 }
