@@ -345,50 +345,11 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./js/signature.js"></script>
 <script>
-  const documentLoaded = () => {
-    const cotisations = {
-      T1: 120,
-      J1: 103,
-      J2: 97,
-      C1: 104,
-      E2: 86,
-      ecole: 230,
-      licence: 41,
-      ffh: 75,
-      etudiant: 120,
-    };
-    const saeAvailable = {
-      T1: true,
-      J1: true,
-      J2: true,
-      C1: true,
-      E2: true,
-      ecole: false,
-      licence: true,
-      ffh: false,
-      etudiant: false,
-    };
-    const cotisationGroup = document.querySelector('#cotisation-group');
-    const cotisationSae = document.querySelector('#cotisation-sae');
-    const cotisationSum = document.querySelector('#cotisation-sum');
-    const updateSum = () => {
-      const value = cotisationGroup.value;
-      if (saeAvailable[value]) {
-        cotisationSae.removeAttribute('disabled');
-      } else {
-        cotisationSae.setAttribute('disabled', 'disabled');
-        cotisationSae.checked = false;
-      }
-      cotisationSum.value = cotisations[value]
-        + (cotisationSae.checked ? 35 : 0);
-    };
-    cotisationGroup
-      .addEventListener('change', updateSum);
-    cotisationSae
-      .addEventListener('change', updateSum);
-  };
-  window.addEventListener('load', documentLoaded);
+  window.addEventListener('load', () => {
+    cotisation();
+  });
 </script>
 </body>
 </html>
