@@ -5,11 +5,20 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 210mm;
-  margin: auto;
-  padding-bottom: 50mm;
+@media screen and (min-width: 210mm) {
+  body {
+    width: 210mm;
+    margin: auto;
+    padding-bottom: 50mm;
+  }
 }
+
+@media (min-width: 576px) {
+  .w-sm-25 {
+    width: 25% !important;
+  }
+}
+
 #signature-image {
   display: none;
 }
@@ -24,6 +33,7 @@ body {
   }
   .form-select {
     --bs-form-select-bg-img: none;
+    --bs-border-width: 0;
   }
   .input-group-text {
     background: none;
@@ -40,6 +50,10 @@ body {
   }
   .nav-link:not(.active) {
     display: none;
+  }
+  textarea.form-control {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #validation { display: none; }

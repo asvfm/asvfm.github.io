@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container-xxl p-0 m-0">
+<div class="container-xxl p-sm-0">
   <header class="row">
-    <div class="col-2">
+    <div class="col-12 col-sm-2 text-center text-sm-center">
       <img src="img/logo.jpg" alt="ASVF Montagne">
     </div>
-    <div class="col-10 text-center">
+    <div class="col-12 col-sm-10 text-center">
       <h1 class="fs-4">ASSOCIATION SPORTIVE DE VILLEFONTAINE-SECTION MONTAGNE</h1>
       <small class="fst-italic">
         22 rue du Passou 38090 VAULX-MILIEU <br>
@@ -30,49 +30,49 @@
   </header>
   <hr>
   <section id="person">
-    <h2 class="bg-secondary-subtle">Références de la personne inscrite</h2>
+    <h2 class="bg-secondary-subtle text-center text-sm-start">Références de la personne inscrite</h2>
 
     <div class="row mb-2">
-      <label for="civility" class="col-form-label col-2">Civilité</label>
-      <div class="col-3">
+      <label for="civility" class="col-form-label col-4 col-sm-2">Civilité</label>
+      <div class="col-8 col-sm-3">
         <select id="civility" class="form-select">
           <option value="monsieur">Monsieur</option>
           <option value="mademoiselle">Mademoiselle</option>
           <option value="madame">Madame</option>
         </select>
       </div>
-      <label for="name" class="col-form-label col-2">Nom</label>
-      <div class="col-5"><input type="text" id="name" class="form-control" placeholder="Nom"></div>
+      <label for="name" class="col-form-label col-4 col-sm-2 mt-2 mt-sm-0">Nom</label>
+      <div class="col-8 col-sm-5 mt-2 mt-sm-0"><input type="text" id="name" class="form-control" placeholder="Nom"></div>
     </div>
     <div class="row mb-2">
-      <label for="firstname" class="col-form-label col-2">Prénom</label>
-      <div class="col-10"><input type="text" id="firstname" class="form-control"></div>
+      <label for="firstname" class="col-form-label col-4 col-sm-2">Prénom</label>
+      <div class="col-8 col-sm-10"><input type="text" id="firstname" class="form-control"></div>
     </div>
     <div class="row mb-2">
-      <label for="address" class="col-form-label col-2">Adresse</label>
-      <div class="col-10"><input type="text" class="form-control" id="address"></div>
+      <label for="address" class="col-form-label col-4 col-sm-2">Adresse</label>
+      <div class="col-8 col-sm-10"><input type="text" class="form-control" id="address"></div>
     </div>
     <div class="row mb-2">
-      <label for="zip-code" class="col-form-label col-2">Code Postal</label>
-      <div class="col-3"><input type="text" class="form-control" id="zip-code"></div>
-      <label for="city" class="col-form-label col-1">Ville</label>
-      <div class="col-6"><input type="text" class="form-control" id="city"></div>
+      <label for="zip-code" class="col-form-label col-4 col-sm-2">Code Postal</label>
+      <div class="col-8 col-sm-3"><input type="text" class="form-control" id="zip-code"></div>
+      <label for="city" class="col-form-label col-4 col-sm-1 mt-2 mt-sm-0">Ville</label>
+      <div class="col-8 col-sm-6 mt-2 mt-sm-0"><input type="text" class="form-control" id="city"></div>
     </div>
     <div class="row mb-2">
-      <label for="birthdate" class="col-form-label col-3">Date de naissance</label>
-      <div class="col-3"><input type="date" class="form-control" id="birthdate"></div>
-      <label for="birthplace" class="col-form-label col-3">Ville de naissance</label>
-      <div class="col-3"><input type="text" class="form-control" id="birthplace"></div>
+      <label for="birthdate" class="col-form-label col-5 col-sm-3">Date de naissance</label>
+      <div class="col-7 col-sm-3"><input type="date" class="form-control" id="birthdate"></div>
+      <label for="birthplace" class="col-form-label col-5 col-sm-3 mt-2 mt-sm-0">Ville de naissance</label>
+      <div class="col-7 col-sm-3 mt-2 mt-sm-0"><input type="text" class="form-control" id="birthplace"></div>
     </div>
     <div class="row mb-2">
-      <label for="phone" class="col-form-label col-3">Téléphone fixe</label>
-      <div class="col-3"><input type="tel" class="form-control" id="phone"></div>
-      <label for="mobile" class="col-form-label col-3">Téléphone portable</label>
-      <div class="col-3"><input type="tel" class="form-control" id="mobile"></div>
+      <label for="phone" class="col-form-label col-5 col-sm-3">Téléphone fixe</label>
+      <div class="col-7 col-sm-3"><input type="tel" class="form-control" id="phone"></div>
+      <label for="mobile" class="col-form-label col-5 col-sm-3 mt-2 mt-sm-0">Téléphone portable</label>
+      <div class="col-7 col-sm-3 mt-2 mt-sm-0"><input type="tel" class="form-control" id="mobile"></div>
     </div>
     <div class="row mb-2">
-      <label for="email" class="col-form-label col-2">Email</label>
-      <div class="col-10"><input type="email" class="form-control" id="email"></div>
+      <label for="email" class="col-form-label col-4 col-sm-2">Email</label>
+      <div class="col-8 col-sm-10"><input type="email" class="form-control" id="email"></div>
     </div>
     <div class="mb-2">
       <label for="mineur" class="form-label">Si l'enfant est mineur</label>
@@ -81,7 +81,7 @@
   </section>
 
   <section id="practice">
-    <h2 class="bg-secondary-subtle">Pratique des activités souhaitées <small class="fs-4">(Purement statistiques)</small></h2>
+    <h2 class="bg-secondary-subtle text-center text-sm-start">Pratique des activités souhaitées <small class="fs-4">(Purement statistiques)</small></h2>
     <div class="form-check form-check-inline">
       <input type="checkbox" class="form-check-input" id="rando">
       <label for="rando" class="form-check-label">Randonnée pédestre</label>
@@ -113,11 +113,11 @@
   </section>
 
   <section id="asvf">
-    <h2 class="bg-secondary-subtle">Carte ASVF Omnisport</h2>
+    <h2 class="bg-secondary-subtle text-center text-sm-start">Carte ASVF Omnisport</h2>
 
     <div class="row mb-2">
-      <label for="asvf-card" class="col-form-label col-6">Je possède une carte ASVF</label>
-      <div class="col-4">
+      <label for="asvf-card" class="col-form-label col-12 col-sm-6">Je possède une carte ASVF</label>
+      <div class="col-8 col-sm-4">
         <div class="input-group">
           <div class="input-group-text">
             <label for="asvf-oui" class="visually-hidden">Oui</label>
@@ -126,7 +126,7 @@
           <input type="text" class="form-control" id="asvf-card">
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-2" style="padding-bottom: .375rem; padding-top: .375rem;">
         <div class="form-check">
           <input type="radio" name="asvf-card" id="asvf-non" class="form-check-input">
           <label for="asvf-non" class="form-check-label">Non</label>
@@ -136,10 +136,10 @@
   </section>
 
   <section id="ffcam">
-    <h2 class="bg-secondary-subtle">Licence FFCAM</h2>
+    <h2 class="bg-secondary-subtle text-center text-sm-start">Licence FFCAM</h2>
     <div class="row mb-2">
-      <label for="personal-licence" class="col-form-label col-6">Je suis déjà licencié·e FFCAM pour cette saison</label>
-      <div class="col-4">
+      <label for="personal-licence" class="col-form-label col-12 col-sm-6">Je suis déjà licencié·e FFCAM pour cette saison</label>
+      <div class="col-8 col-sm-4">
         <div class="input-group">
           <div class="input-group-text">
             <label for="personal-licence-oui" class="visually-hidden">Oui</label>
@@ -148,7 +148,7 @@
           <input type="text" class="form-control" id="personal-licence">
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-2" style="padding-bottom: .375rem; padding-top: .375rem;">
         <div class="form-check">
           <input type="radio" name="personal-licence" id="personal-licence-non" class="form-check-input">
           <label for="personal-licence-non" class="form-check-label">Non</label>
@@ -157,8 +157,8 @@
     </div>
 
     <div class="row mb-2">
-      <label for="conjoint-licence" class="col-form-label col-6">Mon conjoint ou parent est déjà licencié·e FFCAM</label>
-      <div class="col-4">
+      <label for="conjoint-licence" class="col-form-label col-12 col-sm-6">Mon conjoint ou parent est déjà licencié·e FFCAM</label>
+      <div class="col-8 col-sm-4">
         <div class="input-group">
           <div class="input-group-text">
             <label for="conjoint-licence-oui" class="visually-hidden">Oui</label>
@@ -167,7 +167,7 @@
           <input type="text" class="form-control" id="conjoint-licence">
         </div>
       </div>
-      <div class="col-2">
+      <div class="col-2" style="padding-bottom: .375rem; padding-top: .375rem;">
         <div class="form-check">
           <input type="radio" name="conjoint-licence" id="conjoint-licence-non" class="form-check-input">
           <label for="conjoint-licence-non" class="form-check-label">Non</label>
@@ -177,10 +177,10 @@
   </section>
 
   <section id="cotisation">
-    <h2 class="bg-secondary-subtle">Détail des cotisations</h2>
+    <h2 class="bg-secondary-subtle text-center text-sm-start">Détail des cotisations</h2>
     <div class="row mb-2">
-      <label for="cotisation-group" class="col-form-label col-3">Groupe</label>
-      <div class="col-7">
+      <label for="cotisation-group" class="col-form-label col-3 col-sm-3">Groupe</label>
+      <div class="col-9 col-sm-7">
         <select id="cotisation-group" class="form-select" name="cotisation-group">
           <option value="" disabled selected>Sélectionner un groupe</option>
           <option value="T1">Adulte (T1)</option>
@@ -194,7 +194,7 @@
           <option value="etudiant">Étudiant avec SAE</option>
         </select>
       </div>
-      <div class="col-2 mt-2">
+      <div class="col-9 offset-3 offset-sm-0 col-sm-2 mt-2 mt-sm-0" style="padding-top: .375rem;">
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="cotisation-sae">
           <label for="cotisation-sae" class="form-check-label">Avec SAE</label>
@@ -202,8 +202,8 @@
       </div>
     </div>
     <div class="row mb-2">
-      <label for="cotisation-sum" class="col-form-label col-3">Prix de l'inscription</label>
-      <div class="col-9">
+      <label for="cotisation-sum" class="col-form-label col-12 col-sm-3">Prix de l'inscription</label>
+      <div class="col-12 col-sm-9">
         <div class="input-group">
           <input type="text" id="cotisation-sum" class="form-control fw-bold" readonly>
           <span class="input-group-text">&euro;</span>
@@ -213,7 +213,7 @@
   </section>
 
   <section id="certificat-medical">
-    <h2 class="bg-secondary-subtle">Certificat médical</h2>
+    <h2 class="bg-secondary-subtle text-center text-sm-start">Certificat médical</h2>
     <div class="alert alert-info">
       Un certificat médical est demandé pour toute nouvelle inscription. Une attestation de santé sera demandée
       pour proroger d'année en année la validité du certificat médical dans la limite de 5 saisons consécutives.
@@ -229,8 +229,8 @@
     <div class="tab-content" id="certificat-status-content">
       <div class="tab-pane show active" id="certificat-first-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
         <div class="row mb-2">
-          <label class="col-form-label col-3">Certificat médical</label>
-          <div class="col-9 mt-2">
+          <label class="col-form-label col-12 col-sm-3">Certificat médical</label>
+          <div class="col-12 col-sm-9 mt-sm-2">
             <div class="form-check form-check-inline">
               <input type="radio" class="form-check-input" name="certificat-type" id="certificat-type-competition">
               <label for="certificat-type-competition" class="form-check-label">Compétition</label>
@@ -247,7 +247,7 @@
           <div class="col-12">
             Je certifie avoir fourni un certificat médical de non-contrindication aux sports statutaires de la fédération établi
             par le <label for="docteur">docteur</label> <input type="text" id="docteur" class="form-control d-inline w-50">
-            <label for="certificat-date">le</label> <input type="date" class="form-control d-inline w-25" id="certificat-date"> et avoir pris
+            <label for="certificat-date">le</label> <input type="date" class="form-control d-inline w-50 w-sm-25" id="certificat-date"> et avoir pris
             connaissance des précautions et restrictions éventuelles des pratiques.
             </div>
         </div>
@@ -284,7 +284,7 @@
   </section>
 
   <section id="rgpd">
-    <h2 class="bg-secondary-subtle">Données personnelles</h2>
+    <h2 class="bg-secondary-subtle text-center text-sm-start">Données personnelles</h2>
     <div class="row mb-2">
       <div class="col-12">
         Nous avons besoin de recueillir les informations du présent formulaire pour la gestion administrative de votre licence sportive.
@@ -305,7 +305,7 @@
         </div>
         <div class="form-check">
           <input type="checkbox" id="rgpd-asvf" class="form-check-input">
-          <label for="rgpd-partners" class="form-check-label">
+          <label for="rgpd-asvf" class="form-check-label">
             J'accepte de recevoir par mail toute l'actualité sur des activités du club en général <br>
             <span class="fst-italic">
               Pour l'école d'escalade, l'inscription est obligatoire afin de vous tenir informé des événements liés au groupe de votre enfant
@@ -324,13 +324,15 @@
 
   <section id="signature">
     <div class="row mb-2">
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <label for="signature-city" class="form-label">Fait à</label><input type="text" class="form-control d-inline w-50" id="signature-city"><br>
         <label for="signature-date" class="form-label">Le</label><input type="date" class="form-control d-inline w-50" id="signature-date">.
       </div>
-      <div class="col-6">
-        Signature <small>(Pour les mineurs, représentant légal)</small><br>
-        Lu et approuvé
+      <div class="col-12 col-sm-6 mt-2 mt-sm-0 text-center text-sm-start">
+        <div class="text-start">
+          Signature <small>(Pour les mineurs, représentant légal)</small><br>
+          Lu et approuvé
+        </div>
         <canvas class="border-1 border-black border w-100" style="height: 140px" id="signature-canvas"></canvas>
         <button type="button" class="btn btn-secondary" id="signature-efface">Effacer la signature</button>
         <div>
