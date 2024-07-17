@@ -3,8 +3,8 @@ const cotisation = () => {
   const cotisations = {
     T1: 125,
     J1: 108,
-    J2: 102,
-    C1: 109,
+    J2: 103,
+    C1: 108,
     E2: 91,
     ecole: 255,
     licence: 41,
