@@ -75,8 +75,12 @@
       <div class="col-8 col-sm-10"><input type="email" class="form-control" id="email"></div>
     </div>
     <div class="mb-2">
-      <label for="mineur" class="form-label">Si l'enfant est mineur</label>
-      <textarea id="mineur" class="form-control" rows="3">Nom, prénom, adresse, lien de parenté du responsable légal</textarea>
+      <label for="mineur" class="col-form-label col-12">Si l'enfant est mineur</label>
+      <div class="col-12">
+        <textarea id="mineur" class="form-control" rows="3">
+Nom, prénom, adresse, lien de parenté du responsable légal.
+Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
+      </div>
     </div>
   </section>
 
@@ -302,6 +306,14 @@
         <div class="form-check">
           <input type="checkbox" id="rgpd-partners" class="form-check-input">
           <label for="rgpd-partners" class="form-check-label">Je souhaite recevoir des informations des partenaires FFCAM</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="rgpd-image" class="form-check-input">
+          <label for="rgpd-image" class="form-check-label">
+            J'autorise le responsable du club à publier des images me concernant, prises lors des activités sur le site
+            internet et les réseaux sociaux de l'ASVF et documents à diffusion interne au club. <br>
+            <small class="fst-italic">Il s'agit principalement de photos de groupe, aucune image de portrait ne sera diffusée.</small>
+          </label>
         </div>
         <div class="form-check">
           <input type="checkbox" id="rgpd-asvf" class="form-check-input">
