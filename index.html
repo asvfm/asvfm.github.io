@@ -35,14 +35,15 @@
     <div class="row mb-2">
       <label for="civility" class="col-form-label col-4 col-sm-2">Civilité</label>
       <div class="col-8 col-sm-3">
-        <select id="civility" class="form-select">
-          <option value="monsieur">Monsieur</option>
-          <option value="mademoiselle">Mademoiselle</option>
-          <option value="madame">Madame</option>
-        </select>
+        <input type="text" class="form-control" id="civility">
+<!--        <select id="civility" class="form-select">-->
+<!--          <option value="monsieur">Monsieur</option>-->
+<!--          <option value="mademoiselle">Mademoiselle</option>-->
+<!--          <option value="madame">Madame</option>-->
+<!--        </select>-->
       </div>
       <label for="name" class="col-form-label col-4 col-sm-2 mt-2 mt-sm-0">Nom</label>
-      <div class="col-8 col-sm-5 mt-2 mt-sm-0"><input type="text" id="name" class="form-control" placeholder="Nom"></div>
+      <div class="col-8 col-sm-5 mt-2 mt-sm-0"><input type="text" id="name" class="form-control"></div>
     </div>
     <div class="row mb-2">
       <label for="firstname" class="col-form-label col-4 col-sm-2">Prénom</label>
@@ -60,7 +61,7 @@
     </div>
     <div class="row mb-2">
       <label for="birthdate" class="col-form-label col-5 col-sm-3">Date de naissance</label>
-      <div class="col-7 col-sm-3"><input type="date" class="form-control" id="birthdate"></div>
+      <div class="col-7 col-sm-3"><input type="text" class="form-control" id="birthdate"></div>
       <label for="birthplace" class="col-form-label col-5 col-sm-3 mt-2 mt-sm-0">Ville de naissance</label>
       <div class="col-7 col-sm-3 mt-2 mt-sm-0"><input type="text" class="form-control" id="birthplace"></div>
     </div>
@@ -75,11 +76,9 @@
       <div class="col-8 col-sm-10"><input type="email" class="form-control" id="email"></div>
     </div>
     <div class="mb-2">
-      <label for="mineur" class="col-form-label col-12">Si l'enfant est mineur</label>
+      <label for="mineur" class="col-form-label col-12">Si l'enfant est mineur<br>Nom, prénom, téléphone et adresse, lien de parenté du résponsable légal et numéro de téléphone en cas d'urgence</label>
       <div class="col-12">
-        <textarea id="mineur" class="form-control" rows="3">
-Nom, prénom, adresse, lien de parenté du responsable légal.
-Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
+        <textarea id="mineur" class="form-control" rows="3"></textarea>
       </div>
     </div>
   </section>
@@ -184,24 +183,53 @@ Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
     <h2 class="bg-secondary-subtle text-center text-sm-start">Détail des cotisations</h2>
     <div class="row mb-2">
       <label for="cotisation-group" class="col-form-label col-3 col-sm-3">Groupe</label>
-      <div class="col-9 col-sm-7">
-        <select id="cotisation-group" class="form-select" name="cotisation-group">
-          <option value="" disabled selected>Sélectionner un groupe</option>
-          <option value="T1">Adulte (T1)</option>
-          <option value="J1">18 à 24 ans (J1)</option>
-          <option value="J2">Jeune (-18 ans) (J2)</option>
-          <option value="C1">Conjoint (C1)</option>
-          <option value="E2">Enfant d'un member (E2)</option>
-          <option value="ecole">École d'escalade</option>
-          <option value="licence">Licence en cours de validité</option>
-          <option value="ffh">Licence FFH</option>
-          <option value="etudiant">Étudiant avec SAE</option>
-        </select>
+      <div class="col-9 col-sm-9">
+<!--        <select id="cotisation-group" class="form-select" name="cotisation-group">-->
+<!--          <option value="" disabled selected>Sélectionner un groupe</option>-->
+<!--          <option value="T1">Adulte (T1)</option>-->
+<!--          <option value="J1">18 à 24 ans (J1)</option>-->
+<!--          <option value="J2">Jeune (-18 ans) (J2)</option>-->
+<!--          <option value="C1">Conjoint (C1)</option>-->
+<!--          <option value="E2">Enfant d'un member (E2)</option>-->
+<!--          <option value="ecole">École d'escalade</option>-->
+<!--          <option value="licence">Licence en cours de validité</option>-->
+<!--          <option value="ffh">Licence FFH</option>-->
+<!--          <option value="etudiant">Étudiant avec SAE</option>-->
+<!--        </select>-->
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="cotisation-T1">
+          <label for="cotisation-T1" class="form-check-label">Adulte (T1) 125 €</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="cotisation-J1">
+          <label for="cotisation-J1" class="form-check-label">18 à 24 ans (J1) 108 €</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="cotisation-J2">
+          <label for="cotisation-J2" class="form-check-label">Jeunes -18 ans (J2) 103 €</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="cotisation-C1">
+          <label for="cotisation-C1" class="form-check-label">Conjoint (C1) 108 €</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="cotisation-E2">
+          <label for="cotisation-E2" class="form-check-label">Enfant d'un member (E2) 91 €</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="cotisation-ecole">
+          <label for="cotisation-ecole" class="form-check-label">École d'escalade 255 € (SAE incluse)</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="cotisation-licence">
+          <label for="cotisation-licence" class="form-check-label">Licence en cours de validité</label>
+        </div>
       </div>
-      <div class="col-9 offset-3 offset-sm-0 col-sm-2 mt-2 mt-sm-0" style="padding-top: .375rem;">
+      <div class="col-9 offset-3 offset-sm-3 col-sm-3 mt-2 mt-sm-0" style="padding-top: .375rem;">
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="cotisation-sae">
-          <label for="cotisation-sae" class="form-check-label">Avec SAE</label>
+          <label for="cotisation-sae" class="form-check-label">Avec SAE (35 €)</label>
         </div>
       </div>
     </div>
@@ -256,7 +284,7 @@ Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
           <div class="col-12">
             Je certifie avoir fourni un certificat médical de non-contrindication aux sports statutaires de la fédération établi
             par le <label for="docteur">docteur</label> <input type="text" id="docteur" class="form-control d-inline w-50">
-            <label for="certificat-date">le</label> <input type="date" class="form-control d-inline w-50 w-sm-25" id="certificat-date"> et avoir pris
+            <label for="certificat-date">le</label> <input type="text" class="form-control d-inline w-50 w-sm-25" id="certificat-date"> et avoir pris
             connaissance des précautions et restrictions éventuelles des pratiques.
             </div>
         </div>
@@ -285,6 +313,69 @@ Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
             <label for="certificat-mineur-name">Je soussigné·e</label><input type="text" id="certificat-mineur-name" class="form-control d-inline w-50">
             en ma qualité de <label for="certificat-mineur-self">représentant légal</label> de
             <input type="text" id="certificat-mineur-self" class="form-control d-inline w-50"> qu'iel a renseigné le questionnaire de santé QS-
+            SPORT Cerfa N°15699*01 et avoir répondu par la négative à l'ensemble des rubriques.
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="nav nav-tabs" id="certificat-status-2">
+      <li class="nav-item">
+        <button class="nav-link" id="certificat-firs-2" data-bs-toggle="tab" data-bs-target="#certificat-first-pane" type="button">Première licence</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link active" id="certificat-next-2" data-bs-toggle="tab" data-bs-target="#certificat-next-pane-2" type="button">Renouvellement de la licence</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="certificat-status-content-2">
+      <div class="tab-pane show active" id="certificat-first-pane-2" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="row mb-2">
+          <label class="col-form-label col-12 col-sm-3">Certificat médical</label>
+          <div class="col-12 col-sm-9 mt-sm-2">
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="certificat-type" id="certificat-type-competition-2">
+              <label for="certificat-type-competition" class="form-check-label">Compétition</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input type="radio" class="form-check-input" name="certificat-type" id="certificat-type-loisir-2">
+              <label for="certificat-type-loisir" class="form-check-label">Loisir</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-12">
+            Je certifie avoir fourni un certificat médical de non-contrindication aux sports statutaires de la fédération établi
+            par le <label for="docteur-2">docteur</label> <input type="text" id="docteur-2" class="form-control d-inline w-50">
+            <label for="certificat-date-2">le</label> <input type="text" class="form-control d-inline w-50 w-sm-25" id="certificat-date-2"> et avoir pris
+            connaissance des précautions et restrictions éventuelles des pratiques.
+            </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="certificat-next-pane-2">
+        <div class="row mb-2">
+          <div class="col-12">
+            Vous avez transmis un certificat médical l'an dernier. Le questionnaire de santé que le club va vous remettre est à
+            compléter chez vous. Si toutes vos réponses sont négatives, l'attestation ci-dessous est à compléter, si l’une
+            des réponses est positive, vous devez fournir un nouveau certificat médical et compléter ci-dessus.
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-12">
+            <label class="form-label d-block fw-bold">Attestation de santé</label>
+            <label for="certificat-self-name-2">Je soussigné·e</label><input type="text" id="certificat-self-name-2" class="form-control d-inline w-50">
+            atteste avoir renseigné le questionnaire de santé QS-SPORT Cerfa N°15699*01 et avoir répondu par la négative à l'ensemble des rubriques.
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-12">
+            <label class="form-label d-block fw-bold">Pour les mineurs</label>
+            <label for="certificat-mineur-name-2">Je soussigné·e</label><input type="text" id="certificat-mineur-name-2" class="form-control d-inline w-50">
+            en ma qualité de <label for="certificat-mineur-self-2">représentant légal</label> de
+            <input type="text" id="certificat-mineur-self-2" class="form-control d-inline w-50"> qu'iel a renseigné le questionnaire de santé QS-
             SPORT Cerfa N°15699*01 et avoir répondu par la négative à l'ensemble des rubriques.
           </div>
         </div>
@@ -343,7 +434,7 @@ Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
     <div class="row mb-2">
       <div class="col-12 col-sm-6">
         <label for="signature-city" class="form-label">Fait à</label><input type="text" class="form-control d-inline w-50" id="signature-city"><br>
-        <label for="signature-date" class="form-label">Le</label><input type="date" class="form-control d-inline w-50" id="signature-date">.
+        <label for="signature-date" class="form-label">Le</label><input type="text" class="form-control d-inline w-50" id="signature-date">.
       </div>
       <div class="col-12 col-sm-6 mt-2 mt-sm-0 text-center text-sm-start">
         <div class="text-start">
