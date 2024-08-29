@@ -13,6 +13,10 @@
   }
 }
 
+[for="cotisation-group"] + div {
+  columns: 2;
+}
+
 @media (min-width: 576px) {
   .w-sm-25 {
     width: 25% !important;
@@ -27,6 +31,9 @@
   html, body {
     width: 210mm;
     height: 297mm;
+  }
+  .page-break {
+    page-break-before: always;
   }
   .form-control {
     border: none;
@@ -54,6 +61,15 @@
   textarea.form-control {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .form-check-input[type="checkbox"],
+  .form-check-input[type="radio"] {
+    border-color: black;
+    border-width: 2px;
+  }
+  .form-check-input[type="checkbox"] {
+    border-radius: 0;
   }
 
   #validation { display: none; }
