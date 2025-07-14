@@ -42,7 +42,7 @@
         </select>
       </div>
       <label for="name" class="col-form-label col-4 col-sm-2 mt-2 mt-sm-0">Nom</label>
-      <div class="col-8 col-sm-5 mt-2 mt-sm-0"><input type="text" id="name" class="form-control" placeholder="Nom"></div>
+      <div class="col-8 col-sm-5 mt-2 mt-sm-0"><input type="text" id="name" class="form-control"></div>
     </div>
     <div class="row mb-2">
       <label for="firstname" class="col-form-label col-4 col-sm-2">Prénom</label>
@@ -124,8 +124,8 @@ Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
       <div class="col-8 col-sm-4">
         <div class="input-group">
           <div class="input-group-text">
-            <label for="asvf-oui" class="visually-hidden">Oui</label>
             <input type="radio" name="asvf-card" id="asvf-oui" class="form-check-input">
+            <label for="asvf-oui">&nbsp;Oui, numéro :</label>
           </div>
           <input type="text" class="form-control" id="asvf-card">
         </div>
@@ -146,8 +146,8 @@ Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
       <div class="col-8 col-sm-4">
         <div class="input-group">
           <div class="input-group-text">
-            <label for="personal-licence-oui" class="visually-hidden">Oui</label>
             <input type="radio" name="personal-licence" id="personal-licence-oui" class="form-check-input">
+            <label for="personal-licence-oui">&nbsp;Oui, numéro :</label>
           </div>
           <input type="text" class="form-control" id="personal-licence">
         </div>
@@ -165,8 +165,8 @@ Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
       <div class="col-8 col-sm-4">
         <div class="input-group">
           <div class="input-group-text">
-            <label for="conjoint-licence-oui" class="visually-hidden">Oui</label>
             <input type="radio" name="conjoint-licence" id="conjoint-licence-oui" class="form-check-input">
+            <label for="conjoint-licence-oui">&nbsp;Oui, numéro :</label>
           </div>
           <input type="text" class="form-control" id="conjoint-licence">
         </div>
@@ -185,17 +185,15 @@ Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
     <div class="row mb-2">
       <label for="cotisation-group" class="col-form-label col-3 col-sm-3">Groupe</label>
       <div class="col-9 col-sm-7">
-        <select id="cotisation-group" class="form-select" name="cotisation-group">
+        <select id="cotisation-group" class="form-select w-auto" name="cotisation-group">
           <option value="" disabled selected>Sélectionner un groupe</option>
           <option value="T1">Adulte (T1)</option>
           <option value="J1">18 à 24 ans (J1)</option>
           <option value="J2">Jeune (-18 ans) (J2)</option>
           <option value="C1">Conjoint (C1)</option>
-          <option value="E2">Enfant d'un member (E2)</option>
-          <option value="ecole">École d'escalade</option>
+          <option value="E1">Enfant d'un membre 18 à 24 ans (E1)</option>
+          <option value="E2">Enfant d'un member -18 ans (E2)</option>
           <option value="licence">Licence en cours de validité</option>
-          <option value="ffh">Licence FFH</option>
-          <option value="etudiant">Étudiant avec SAE</option>
         </select>
       </div>
       <div class="col-9 offset-3 offset-sm-0 col-sm-2 mt-2 mt-sm-0" style="padding-top: .375rem;">
@@ -216,7 +214,7 @@ Téléphone en cas d'urgence et adresse mail du responsable légal.</textarea>
     </div>
     <div class="alert alert-info d-print-none">
       Vous pouvez envoyer un chèque à l'ordre de l'ASVF Montagne, à l'adresse indiquée en haut de ce bulletin. <br>
-      Ou effectuer un virement sur le compte suivant :<br>FR76 1382 5002 0008 0018 5201 990 (BIC : CEPAFRPP382). <br>
+      Ou effectuer un virement en demandant le RIB à l'adresse <a href="mailto:contact@asvf-montagne.fr">contact@asvf-montagne.fr</a>. <br>
       Merci d'indiquer le nom et le prénom de la personne inscrite dans la référence ou le commentaire du virement.
     </div>
   </section>
