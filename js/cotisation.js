@@ -1,26 +1,23 @@
 
 const cotisation = () => {
+  const cotisationSaeAmount = 35;
   const cotisations = {
-    T1: 125,
-    J1: 108,
-    J2: 103,
-    C1: 108,
-    E2: 91,
-    ecole: 255,
+    T1: 128,
+    J1: 109,
+    J2: 105,
+    C1: 111,
+    E1: 99,
+    E2: 93,
     licence: 41,
-    ffh: 80,
-    etudiant: 125,
   };
   const saeAvailable = {
     T1: true,
     J1: true,
     J2: true,
     C1: true,
+    E1: true,
     E2: true,
-    ecole: false,
     licence: true,
-    ffh: false,
-    etudiant: false,
   };
   const cotisationGroup = document.querySelector('#cotisation-group');
   const cotisationSae = document.querySelector('#cotisation-sae');
@@ -34,7 +31,7 @@ const cotisation = () => {
       cotisationSae.checked = false;
     }
     cotisationSum.value = cotisations[value]
-      + (cotisationSae.checked ? 35 : 0);
+      + (cotisationSae.checked ? cotisationSaeAmount : 0);
   };
   cotisationGroup
     .addEventListener('change', updateSum);
