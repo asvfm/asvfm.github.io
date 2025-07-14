@@ -37,6 +37,9 @@
   }
   .form-control {
     border: none;
+    border-bottom: 2px solid var(--bs-body-color);
+    border-radius: 0;
+    padding: 0;
   }
   .form-select {
     --bs-form-select-bg-img: none;
@@ -70,6 +73,10 @@
   }
   .form-check-input[type="checkbox"] {
     border-radius: 0;
+  }
+  .col-form-label, .input-group-text {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   #validation { display: none; }
