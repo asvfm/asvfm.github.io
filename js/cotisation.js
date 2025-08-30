@@ -9,6 +9,7 @@ const cotisation = () => {
     E1: 99,
     E2: 93,
     licence: 41,
+    etudiant: 128,
   };
   const saeAvailable = {
     T1: true,
@@ -18,6 +19,7 @@ const cotisation = () => {
     E1: true,
     E2: true,
     licence: true,
+    etudiant: false,
   };
   const cotisationGroup = document.querySelector('#cotisation-group');
   const cotisationSae = document.querySelector('#cotisation-sae');
