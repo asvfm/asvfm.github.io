@@ -2,14 +2,14 @@
 const cotisation = () => {
   const cotisationSaeAmount = 35;
   const cotisations = {
-    T1: 128,
-    J1: 109,
-    J2: 105,
-    C1: 111,
-    E1: 99,
-    E2: 93,
-    licence: 41,
-    etudiant: 128,
+    T1: 133,
+    J1: 114,
+    J2: 109,
+    C1: 116,
+    E1: 98,
+    E2: 104,
+    licence: 44,
+    etudiant: 133,
   };
   const saeAvailable = {
     T1: true,
